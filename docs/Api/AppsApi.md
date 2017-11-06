@@ -4,11 +4,11 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**appsCreateApp**](AppsApi.md#appsCreateApp) | **POST** /apps | 
+[**createApp**](AppsApi.md#createApp) | **POST** /apps | 
 
 
-# **appsCreateApp**
-> \Swagger\Client\Model\AppCreationResponseModel appsCreateApp($author_name, $author_email, $new_app_model)
+# **createApp**
+> \Swagger\Client\Model\AppCreationResponseModel createApp($author_name, $author_email, $new_app_model)
 
 
 
@@ -25,10 +25,10 @@ $author_email = "author_email_example"; // string |
 $new_app_model = new \Swagger\Client\Model\AppCreationRequestModel(); // \Swagger\Client\Model\AppCreationRequestModel | 
 
 try {
-    $result = $api_instance->appsCreateApp($author_name, $author_email, $new_app_model);
+    $result = $api_instance->createApp($author_name, $author_email, $new_app_model);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AppsApi->appsCreateApp: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AppsApi->createApp: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

@@ -88,7 +88,7 @@ class KeysApi
     }
 
     /**
-     * Operation keysDeleteKey
+     * Operation deleteKey
      *
      * @param string $key_path  (required)
      * @param string $author_name  (required)
@@ -96,14 +96,14 @@ class KeysApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
-    public function keysDeleteKey($key_path, $author_name, $author_email)
+    public function deleteKey($key_path, $author_name, $author_email)
     {
-        list($response) = $this->keysDeleteKeyWithHttpInfo($key_path, $author_name, $author_email);
+        list($response) = $this->deleteKeyWithHttpInfo($key_path, $author_name, $author_email);
         return $response;
     }
 
     /**
-     * Operation keysDeleteKeyWithHttpInfo
+     * Operation deleteKeyWithHttpInfo
      *
      * @param string $key_path  (required)
      * @param string $author_name  (required)
@@ -111,19 +111,19 @@ class KeysApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysDeleteKeyWithHttpInfo($key_path, $author_name, $author_email)
+    public function deleteKeyWithHttpInfo($key_path, $author_name, $author_email)
     {
         // verify the required parameter 'key_path' is set
         if ($key_path === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling keysDeleteKey');
+            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling deleteKey');
         }
         // verify the required parameter 'author_name' is set
         if ($author_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling keysDeleteKey');
+            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling deleteKey');
         }
         // verify the required parameter 'author_email' is set
         if ($author_email === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling keysDeleteKey');
+            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling deleteKey');
         }
         // parse inputs
         $resourcePath = "/key";
@@ -182,24 +182,24 @@ class KeysApi
     }
 
     /**
-     * Operation keysGetAllKeys
+     * Operation listKeys
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string[]
      */
-    public function keysGetAllKeys()
+    public function listKeys()
     {
-        list($response) = $this->keysGetAllKeysWithHttpInfo();
+        list($response) = $this->listKeysWithHttpInfo();
         return $response;
     }
 
     /**
-     * Operation keysGetAllKeysWithHttpInfo
+     * Operation listKeysWithHttpInfo
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysGetAllKeysWithHttpInfo()
+    public function listKeysWithHttpInfo()
     {
         // parse inputs
         $resourcePath = "/keys";
@@ -246,24 +246,24 @@ class KeysApi
     }
 
     /**
-     * Operation keysGetAllManifests
+     * Operation listManifests
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return object[]
      */
-    public function keysGetAllManifests()
+    public function listManifests()
     {
-        list($response) = $this->keysGetAllManifestsWithHttpInfo();
+        list($response) = $this->listManifestsWithHttpInfo();
         return $response;
     }
 
     /**
-     * Operation keysGetAllManifestsWithHttpInfo
+     * Operation listManifestsWithHttpInfo
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysGetAllManifestsWithHttpInfo()
+    public function listManifestsWithHttpInfo()
     {
         // parse inputs
         $resourcePath = "/manifests";
@@ -310,30 +310,30 @@ class KeysApi
     }
 
     /**
-     * Operation keysGetDependents
+     * Operation getDependents
      *
      * @param string $key_path  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return object
      */
-    public function keysGetDependents($key_path)
+    public function getDependents($key_path)
     {
-        list($response) = $this->keysGetDependentsWithHttpInfo($key_path);
+        list($response) = $this->getDependentsWithHttpInfo($key_path);
         return $response;
     }
 
     /**
-     * Operation keysGetDependentsWithHttpInfo
+     * Operation getDependentsWithHttpInfo
      *
      * @param string $key_path  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysGetDependentsWithHttpInfo($key_path)
+    public function getDependentsWithHttpInfo($key_path)
     {
         // verify the required parameter 'key_path' is set
         if ($key_path === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling keysGetDependents');
+            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling getDependents');
         }
         // parse inputs
         $resourcePath = "/dependent";
@@ -384,32 +384,32 @@ class KeysApi
     }
 
     /**
-     * Operation keysGetKey
+     * Operation getKey
      *
      * @param string $key_path  (required)
      * @param string $revision  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return object
      */
-    public function keysGetKey($key_path, $revision = null)
+    public function getKey($key_path, $revision = null)
     {
-        list($response) = $this->keysGetKeyWithHttpInfo($key_path, $revision);
+        list($response) = $this->getKeyWithHttpInfo($key_path, $revision);
         return $response;
     }
 
     /**
-     * Operation keysGetKeyWithHttpInfo
+     * Operation getKeyWithHttpInfo
      *
      * @param string $key_path  (required)
      * @param string $revision  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysGetKeyWithHttpInfo($key_path, $revision = null)
+    public function getKeyWithHttpInfo($key_path, $revision = null)
     {
         // verify the required parameter 'key_path' is set
         if ($key_path === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling keysGetKey');
+            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling getKey');
         }
         // parse inputs
         $resourcePath = "/key";
@@ -464,36 +464,36 @@ class KeysApi
     }
 
     /**
-     * Operation keysGetKeyRevisionHistory
+     * Operation getKeyRevisionHistory
      *
      * @param string $key_path  (required)
      * @param string $since  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return object[]
      */
-    public function keysGetKeyRevisionHistory($key_path, $since)
+    public function getKeyRevisionHistory($key_path, $since)
     {
-        list($response) = $this->keysGetKeyRevisionHistoryWithHttpInfo($key_path, $since);
+        list($response) = $this->getKeyRevisionHistoryWithHttpInfo($key_path, $since);
         return $response;
     }
 
     /**
-     * Operation keysGetKeyRevisionHistoryWithHttpInfo
+     * Operation getKeyRevisionHistoryWithHttpInfo
      *
      * @param string $key_path  (required)
      * @param string $since  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysGetKeyRevisionHistoryWithHttpInfo($key_path, $since)
+    public function getKeyRevisionHistoryWithHttpInfo($key_path, $since)
     {
         // verify the required parameter 'key_path' is set
         if ($key_path === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling keysGetKeyRevisionHistory');
+            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling getKeyRevisionHistory');
         }
         // verify the required parameter 'since' is set
         if ($since === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $since when calling keysGetKeyRevisionHistory');
+            throw new \InvalidArgumentException('Missing the required parameter $since when calling getKeyRevisionHistory');
         }
         // parse inputs
         $resourcePath = "/revision-history";
@@ -548,32 +548,32 @@ class KeysApi
     }
 
     /**
-     * Operation keysGetManifest
+     * Operation getManifest
      *
      * @param string $key_path  (required)
      * @param string $revision  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return object
      */
-    public function keysGetManifest($key_path, $revision = null)
+    public function getManifest($key_path, $revision = null)
     {
-        list($response) = $this->keysGetManifestWithHttpInfo($key_path, $revision);
+        list($response) = $this->getManifestWithHttpInfo($key_path, $revision);
         return $response;
     }
 
     /**
-     * Operation keysGetManifestWithHttpInfo
+     * Operation getManifestWithHttpInfo
      *
      * @param string $key_path  (required)
      * @param string $revision  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysGetManifestWithHttpInfo($key_path, $revision = null)
+    public function getManifestWithHttpInfo($key_path, $revision = null)
     {
         // verify the required parameter 'key_path' is set
         if ($key_path === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling keysGetManifest');
+            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling getManifest');
         }
         // parse inputs
         $resourcePath = "/manifest";
@@ -628,24 +628,24 @@ class KeysApi
     }
 
     /**
-     * Operation keysGetRevision
+     * Operation getRevision
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
-    public function keysGetRevision()
+    public function getRevision()
     {
-        list($response) = $this->keysGetRevisionWithHttpInfo();
+        list($response) = $this->getRevisionWithHttpInfo();
         return $response;
     }
 
     /**
-     * Operation keysGetRevisionWithHttpInfo
+     * Operation getRevisionWithHttpInfo
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysGetRevisionWithHttpInfo()
+    public function getRevisionWithHttpInfo()
     {
         // parse inputs
         $resourcePath = "/revision";
@@ -692,7 +692,7 @@ class KeysApi
     }
 
     /**
-     * Operation keysUpdateKey
+     * Operation updateKey
      *
      * @param string $key_path  (required)
      * @param string $author_name  (required)
@@ -701,14 +701,14 @@ class KeysApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
-    public function keysUpdateKey($key_path, $author_name, $author_email, $new_key_model)
+    public function updateKey($key_path, $author_name, $author_email, $new_key_model)
     {
-        list($response) = $this->keysUpdateKeyWithHttpInfo($key_path, $author_name, $author_email, $new_key_model);
+        list($response) = $this->updateKeyWithHttpInfo($key_path, $author_name, $author_email, $new_key_model);
         return $response;
     }
 
     /**
-     * Operation keysUpdateKeyWithHttpInfo
+     * Operation updateKeyWithHttpInfo
      *
      * @param string $key_path  (required)
      * @param string $author_name  (required)
@@ -717,23 +717,23 @@ class KeysApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysUpdateKeyWithHttpInfo($key_path, $author_name, $author_email, $new_key_model)
+    public function updateKeyWithHttpInfo($key_path, $author_name, $author_email, $new_key_model)
     {
         // verify the required parameter 'key_path' is set
         if ($key_path === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling keysUpdateKey');
+            throw new \InvalidArgumentException('Missing the required parameter $key_path when calling updateKey');
         }
         // verify the required parameter 'author_name' is set
         if ($author_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling keysUpdateKey');
+            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling updateKey');
         }
         // verify the required parameter 'author_email' is set
         if ($author_email === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling keysUpdateKey');
+            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling updateKey');
         }
         // verify the required parameter 'new_key_model' is set
         if ($new_key_model === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $new_key_model when calling keysUpdateKey');
+            throw new \InvalidArgumentException('Missing the required parameter $new_key_model when calling updateKey');
         }
         // parse inputs
         $resourcePath = "/key";

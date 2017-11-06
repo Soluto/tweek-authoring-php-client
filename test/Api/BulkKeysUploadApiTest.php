@@ -1,6 +1,6 @@
 <?php
 /**
- * BulkkeysuploadApiTest
+ * BulkKeysUploadApiTest
  * PHP version 5
  *
  * @category Class
@@ -34,14 +34,14 @@ use \Swagger\Client\ApiException;
 use \Swagger\Client\ObjectSerializer;
 
 /**
- * BulkkeysuploadApiTest Class Doc Comment
+ * BulkKeysUploadApiTest Class Doc Comment
  *
  * @category Class
  * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BulkkeysuploadApiTest extends \PHPUnit_Framework_TestCase
+class BulkKeysUploadApiTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -73,12 +73,12 @@ class BulkkeysuploadApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for bulkKeysUploadBulkKeysUpload
+     * Test case for bulkKeysUpload
      *
      * .
      *
      */
-    public function testBulkKeysUploadBulkKeysUpload()
+    public function testBulkKeysUpload()
     {
     }
 }

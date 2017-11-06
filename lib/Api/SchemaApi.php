@@ -88,7 +88,7 @@ class SchemaApi
     }
 
     /**
-     * Operation schemaAddIdentity
+     * Operation addIdentity
      *
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
@@ -97,14 +97,14 @@ class SchemaApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
-    public function schemaAddIdentity($identity_type, $author_name, $author_email, $value)
+    public function addIdentity($identity_type, $author_name, $author_email, $value)
     {
-        list($response) = $this->schemaAddIdentityWithHttpInfo($identity_type, $author_name, $author_email, $value);
+        list($response) = $this->addIdentityWithHttpInfo($identity_type, $author_name, $author_email, $value);
         return $response;
     }
 
     /**
-     * Operation schemaAddIdentityWithHttpInfo
+     * Operation addIdentityWithHttpInfo
      *
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
@@ -113,23 +113,23 @@ class SchemaApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function schemaAddIdentityWithHttpInfo($identity_type, $author_name, $author_email, $value)
+    public function addIdentityWithHttpInfo($identity_type, $author_name, $author_email, $value)
     {
         // verify the required parameter 'identity_type' is set
         if ($identity_type === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $identity_type when calling schemaAddIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $identity_type when calling addIdentity');
         }
         // verify the required parameter 'author_name' is set
         if ($author_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling schemaAddIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling addIdentity');
         }
         // verify the required parameter 'author_email' is set
         if ($author_email === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling schemaAddIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling addIdentity');
         }
         // verify the required parameter 'value' is set
         if ($value === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $value when calling schemaAddIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $value when calling addIdentity');
         }
         // parse inputs
         $resourcePath = "/schemas/{identityType}";
@@ -197,7 +197,7 @@ class SchemaApi
     }
 
     /**
-     * Operation schemaDeleteIdentity
+     * Operation deleteIdentity
      *
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
@@ -205,14 +205,14 @@ class SchemaApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
-    public function schemaDeleteIdentity($identity_type, $author_name, $author_email)
+    public function deleteIdentity($identity_type, $author_name, $author_email)
     {
-        list($response) = $this->schemaDeleteIdentityWithHttpInfo($identity_type, $author_name, $author_email);
+        list($response) = $this->deleteIdentityWithHttpInfo($identity_type, $author_name, $author_email);
         return $response;
     }
 
     /**
-     * Operation schemaDeleteIdentityWithHttpInfo
+     * Operation deleteIdentityWithHttpInfo
      *
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
@@ -220,19 +220,19 @@ class SchemaApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function schemaDeleteIdentityWithHttpInfo($identity_type, $author_name, $author_email)
+    public function deleteIdentityWithHttpInfo($identity_type, $author_name, $author_email)
     {
         // verify the required parameter 'identity_type' is set
         if ($identity_type === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $identity_type when calling schemaDeleteIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $identity_type when calling deleteIdentity');
         }
         // verify the required parameter 'author_name' is set
         if ($author_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling schemaDeleteIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling deleteIdentity');
         }
         // verify the required parameter 'author_email' is set
         if ($author_email === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling schemaDeleteIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling deleteIdentity');
         }
         // parse inputs
         $resourcePath = "/schemas/{identityType}";
@@ -295,24 +295,24 @@ class SchemaApi
     }
 
     /**
-     * Operation schemaGetSchemas
+     * Operation listSchemas
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return object[]
      */
-    public function schemaGetSchemas()
+    public function listSchemas()
     {
-        list($response) = $this->schemaGetSchemasWithHttpInfo();
+        list($response) = $this->listSchemasWithHttpInfo();
         return $response;
     }
 
     /**
-     * Operation schemaGetSchemasWithHttpInfo
+     * Operation listSchemasWithHttpInfo
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of object[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function schemaGetSchemasWithHttpInfo()
+    public function listSchemasWithHttpInfo()
     {
         // parse inputs
         $resourcePath = "/schemas";
@@ -359,7 +359,7 @@ class SchemaApi
     }
 
     /**
-     * Operation schemaPatchIdentity
+     * Operation patchIdentity
      *
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
@@ -368,14 +368,14 @@ class SchemaApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
-    public function schemaPatchIdentity($identity_type, $author_name, $author_email, $patch)
+    public function patchIdentity($identity_type, $author_name, $author_email, $patch)
     {
-        list($response) = $this->schemaPatchIdentityWithHttpInfo($identity_type, $author_name, $author_email, $patch);
+        list($response) = $this->patchIdentityWithHttpInfo($identity_type, $author_name, $author_email, $patch);
         return $response;
     }
 
     /**
-     * Operation schemaPatchIdentityWithHttpInfo
+     * Operation patchIdentityWithHttpInfo
      *
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
@@ -384,23 +384,23 @@ class SchemaApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function schemaPatchIdentityWithHttpInfo($identity_type, $author_name, $author_email, $patch)
+    public function patchIdentityWithHttpInfo($identity_type, $author_name, $author_email, $patch)
     {
         // verify the required parameter 'identity_type' is set
         if ($identity_type === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $identity_type when calling schemaPatchIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $identity_type when calling patchIdentity');
         }
         // verify the required parameter 'author_name' is set
         if ($author_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling schemaPatchIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling patchIdentity');
         }
         // verify the required parameter 'author_email' is set
         if ($author_email === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling schemaPatchIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling patchIdentity');
         }
         // verify the required parameter 'patch' is set
         if ($patch === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $patch when calling schemaPatchIdentity');
+            throw new \InvalidArgumentException('Missing the required parameter $patch when calling patchIdentity');
         }
         // parse inputs
         $resourcePath = "/schemas/{identityType}";

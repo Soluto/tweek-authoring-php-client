@@ -1,6 +1,6 @@
 <?php
 /**
- * BulkkeysuploadApi
+ * BulkKeysUploadApi
  * PHP version 5
  *
  * @category Class
@@ -34,14 +34,14 @@ use \Swagger\Client\Configuration;
 use \Swagger\Client\ObjectSerializer;
 
 /**
- * BulkkeysuploadApi Class Doc Comment
+ * BulkKeysUploadApi Class Doc Comment
  *
  * @category Class
  * @package  Swagger\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BulkkeysuploadApi
+class BulkKeysUploadApi
 {
     /**
      * API Client
@@ -79,7 +79,7 @@ class BulkkeysuploadApi
      *
      * @param \Swagger\Client\ApiClient $apiClient set the API client
      *
-     * @return BulkkeysuploadApi
+     * @return BulkKeysUploadApi
      */
     public function setApiClient(\Swagger\Client\ApiClient $apiClient)
     {
@@ -88,7 +88,7 @@ class BulkkeysuploadApi
     }
 
     /**
-     * Operation bulkKeysUploadBulkKeysUpload
+     * Operation bulkKeysUpload
      *
      * @param string $author_name  (required)
      * @param string $author_email  (required)
@@ -96,14 +96,14 @@ class BulkkeysuploadApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return void
      */
-    public function bulkKeysUploadBulkKeysUpload($author_name, $author_email, $bulk)
+    public function bulkKeysUpload($author_name, $author_email, $bulk)
     {
-        list($response) = $this->bulkKeysUploadBulkKeysUploadWithHttpInfo($author_name, $author_email, $bulk);
+        list($response) = $this->bulkKeysUploadWithHttpInfo($author_name, $author_email, $bulk);
         return $response;
     }
 
     /**
-     * Operation bulkKeysUploadBulkKeysUploadWithHttpInfo
+     * Operation bulkKeysUploadWithHttpInfo
      *
      * @param string $author_name  (required)
      * @param string $author_email  (required)
@@ -111,19 +111,19 @@ class BulkkeysuploadApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function bulkKeysUploadBulkKeysUploadWithHttpInfo($author_name, $author_email, $bulk)
+    public function bulkKeysUploadWithHttpInfo($author_name, $author_email, $bulk)
     {
         // verify the required parameter 'author_name' is set
         if ($author_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling bulkKeysUploadBulkKeysUpload');
+            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling bulkKeysUpload');
         }
         // verify the required parameter 'author_email' is set
         if ($author_email === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling bulkKeysUploadBulkKeysUpload');
+            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling bulkKeysUpload');
         }
         // verify the required parameter 'bulk' is set
         if ($bulk === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $bulk when calling bulkKeysUploadBulkKeysUpload');
+            throw new \InvalidArgumentException('Missing the required parameter $bulk when calling bulkKeysUpload');
         }
         // parse inputs
         $resourcePath = "/bulk-keys-upload";

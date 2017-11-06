@@ -88,24 +88,24 @@ class SearchApi
     }
 
     /**
-     * Operation searchGetSearchIndex
+     * Operation getSearchIndex
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return object
      */
-    public function searchGetSearchIndex()
+    public function getSearchIndex()
     {
-        list($response) = $this->searchGetSearchIndexWithHttpInfo();
+        list($response) = $this->getSearchIndexWithHttpInfo();
         return $response;
     }
 
     /**
-     * Operation searchGetSearchIndexWithHttpInfo
+     * Operation getSearchIndexWithHttpInfo
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
-    public function searchGetSearchIndexWithHttpInfo()
+    public function getSearchIndexWithHttpInfo()
     {
         // parse inputs
         $resourcePath = "/search-index";
@@ -152,32 +152,32 @@ class SearchApi
     }
 
     /**
-     * Operation searchSearch
+     * Operation search
      *
      * @param string $q  (required)
      * @param double $count  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string[]
      */
-    public function searchSearch($q, $count = null)
+    public function search($q, $count = null)
     {
-        list($response) = $this->searchSearchWithHttpInfo($q, $count);
+        list($response) = $this->searchWithHttpInfo($q, $count);
         return $response;
     }
 
     /**
-     * Operation searchSearchWithHttpInfo
+     * Operation searchWithHttpInfo
      *
      * @param string $q  (required)
      * @param double $count  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function searchSearchWithHttpInfo($q, $count = null)
+    public function searchWithHttpInfo($q, $count = null)
     {
         // verify the required parameter 'q' is set
         if ($q === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $q when calling searchSearch');
+            throw new \InvalidArgumentException('Missing the required parameter $q when calling search');
         }
         // parse inputs
         $resourcePath = "/search";
@@ -232,32 +232,32 @@ class SearchApi
     }
 
     /**
-     * Operation searchSuggestions
+     * Operation getSuggestions
      *
      * @param string $q  (required)
      * @param double $count  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string[]
      */
-    public function searchSuggestions($q, $count = null)
+    public function getSuggestions($q, $count = null)
     {
-        list($response) = $this->searchSuggestionsWithHttpInfo($q, $count);
+        list($response) = $this->getSuggestionsWithHttpInfo($q, $count);
         return $response;
     }
 
     /**
-     * Operation searchSuggestionsWithHttpInfo
+     * Operation getSuggestionsWithHttpInfo
      *
      * @param string $q  (required)
      * @param double $count  (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function searchSuggestionsWithHttpInfo($q, $count = null)
+    public function getSuggestionsWithHttpInfo($q, $count = null)
     {
         // verify the required parameter 'q' is set
         if ($q === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $q when calling searchSuggestions');
+            throw new \InvalidArgumentException('Missing the required parameter $q when calling getSuggestions');
         }
         // parse inputs
         $resourcePath = "/suggestions";

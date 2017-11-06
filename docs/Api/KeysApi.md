@@ -4,19 +4,19 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**keysDeleteKey**](KeysApi.md#keysDeleteKey) | **DELETE** /key | 
-[**keysGetAllKeys**](KeysApi.md#keysGetAllKeys) | **GET** /keys | 
-[**keysGetAllManifests**](KeysApi.md#keysGetAllManifests) | **GET** /manifests | 
-[**keysGetDependents**](KeysApi.md#keysGetDependents) | **GET** /dependent | 
-[**keysGetKey**](KeysApi.md#keysGetKey) | **GET** /key | 
-[**keysGetKeyRevisionHistory**](KeysApi.md#keysGetKeyRevisionHistory) | **GET** /revision-history | 
-[**keysGetManifest**](KeysApi.md#keysGetManifest) | **GET** /manifest | 
-[**keysGetRevision**](KeysApi.md#keysGetRevision) | **GET** /revision | 
-[**keysUpdateKey**](KeysApi.md#keysUpdateKey) | **PUT** /key | 
+[**deleteKey**](KeysApi.md#deleteKey) | **DELETE** /key | 
+[**listKeys**](KeysApi.md#listKeys) | **GET** /keys | 
+[**listManifests**](KeysApi.md#listManifests) | **GET** /manifests | 
+[**getDependents**](KeysApi.md#getDependents) | **GET** /dependent | 
+[**getKey**](KeysApi.md#getKey) | **GET** /key | 
+[**getKeyRevisionHistory**](KeysApi.md#getKeyRevisionHistory) | **GET** /revision-history | 
+[**getManifest**](KeysApi.md#getManifest) | **GET** /manifest | 
+[**getRevision**](KeysApi.md#getRevision) | **GET** /revision | 
+[**updateKey**](KeysApi.md#updateKey) | **PUT** /key | 
 
 
-# **keysDeleteKey**
-> string keysDeleteKey($key_path, $author_name, $author_email)
+# **deleteKey**
+> string deleteKey($key_path, $author_name, $author_email)
 
 
 
@@ -33,10 +33,10 @@ $author_name = "author_name_example"; // string |
 $author_email = "author_email_example"; // string | 
 
 try {
-    $result = $api_instance->keysDeleteKey($key_path, $author_name, $author_email);
+    $result = $api_instance->deleteKey($key_path, $author_name, $author_email);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysDeleteKey: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->deleteKey: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -64,8 +64,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **keysGetAllKeys**
-> string[] keysGetAllKeys()
+# **listKeys**
+> string[] listKeys()
 
 
 
@@ -79,10 +79,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new Swagger\Client\Api\KeysApi();
 
 try {
-    $result = $api_instance->keysGetAllKeys();
+    $result = $api_instance->listKeys();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysGetAllKeys: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->listKeys: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -105,8 +105,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **keysGetAllManifests**
-> object[] keysGetAllManifests()
+# **listManifests**
+> object[] listManifests()
 
 
 
@@ -120,10 +120,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new Swagger\Client\Api\KeysApi();
 
 try {
-    $result = $api_instance->keysGetAllManifests();
+    $result = $api_instance->listManifests();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysGetAllManifests: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->listManifests: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -146,8 +146,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **keysGetDependents**
-> object keysGetDependents($key_path)
+# **getDependents**
+> object getDependents($key_path)
 
 
 
@@ -162,10 +162,10 @@ $api_instance = new Swagger\Client\Api\KeysApi();
 $key_path = "key_path_example"; // string | 
 
 try {
-    $result = $api_instance->keysGetDependents($key_path);
+    $result = $api_instance->getDependents($key_path);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysGetDependents: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->getDependents: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -191,8 +191,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **keysGetKey**
-> object keysGetKey($key_path, $revision)
+# **getKey**
+> object getKey($key_path, $revision)
 
 
 
@@ -208,10 +208,10 @@ $key_path = "key_path_example"; // string |
 $revision = "revision_example"; // string | 
 
 try {
-    $result = $api_instance->keysGetKey($key_path, $revision);
+    $result = $api_instance->getKey($key_path, $revision);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysGetKey: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->getKey: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -238,8 +238,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **keysGetKeyRevisionHistory**
-> object[] keysGetKeyRevisionHistory($key_path, $since)
+# **getKeyRevisionHistory**
+> object[] getKeyRevisionHistory($key_path, $since)
 
 
 
@@ -255,10 +255,10 @@ $key_path = "key_path_example"; // string |
 $since = "since_example"; // string | 
 
 try {
-    $result = $api_instance->keysGetKeyRevisionHistory($key_path, $since);
+    $result = $api_instance->getKeyRevisionHistory($key_path, $since);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysGetKeyRevisionHistory: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->getKeyRevisionHistory: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -285,8 +285,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **keysGetManifest**
-> object keysGetManifest($key_path, $revision)
+# **getManifest**
+> object getManifest($key_path, $revision)
 
 
 
@@ -302,10 +302,10 @@ $key_path = "key_path_example"; // string |
 $revision = "revision_example"; // string | 
 
 try {
-    $result = $api_instance->keysGetManifest($key_path, $revision);
+    $result = $api_instance->getManifest($key_path, $revision);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysGetManifest: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->getManifest: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -332,8 +332,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **keysGetRevision**
-> string keysGetRevision()
+# **getRevision**
+> string getRevision()
 
 
 
@@ -347,10 +347,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new Swagger\Client\Api\KeysApi();
 
 try {
-    $result = $api_instance->keysGetRevision();
+    $result = $api_instance->getRevision();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysGetRevision: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->getRevision: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -373,8 +373,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **keysUpdateKey**
-> string keysUpdateKey($key_path, $author_name, $author_email, $new_key_model)
+# **updateKey**
+> string updateKey($key_path, $author_name, $author_email, $new_key_model)
 
 
 
@@ -392,10 +392,10 @@ $author_email = "author_email_example"; // string |
 $new_key_model = new \Swagger\Client\Model\KeyUpdateModel(); // \Swagger\Client\Model\KeyUpdateModel | 
 
 try {
-    $result = $api_instance->keysUpdateKey($key_path, $author_name, $author_email, $new_key_model);
+    $result = $api_instance->updateKey($key_path, $author_name, $author_email, $new_key_model);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling KeysApi->keysUpdateKey: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling KeysApi->updateKey: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

@@ -1,14 +1,14 @@
-# Swagger\Client\BulkkeysuploadApi
+# Swagger\Client\BulkKeysUploadApi
 
 All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**bulkKeysUploadBulkKeysUpload**](BulkkeysuploadApi.md#bulkKeysUploadBulkKeysUpload) | **PUT** /bulk-keys-upload | 
+[**bulkKeysUpload**](BulkKeysUploadApi.md#bulkKeysUpload) | **PUT** /bulk-keys-upload | 
 
 
-# **bulkKeysUploadBulkKeysUpload**
-> bulkKeysUploadBulkKeysUpload($author_name, $author_email, $bulk)
+# **bulkKeysUpload**
+> bulkKeysUpload($author_name, $author_email, $bulk)
 
 
 
@@ -19,15 +19,15 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\BulkkeysuploadApi();
+$api_instance = new Swagger\Client\Api\BulkKeysUploadApi();
 $author_name = "author_name_example"; // string | 
 $author_email = "author_email_example"; // string | 
 $bulk = "/path/to/file.txt"; // \SplFileObject | 
 
 try {
-    $api_instance->bulkKeysUploadBulkKeysUpload($author_name, $author_email, $bulk);
+    $api_instance->bulkKeysUpload($author_name, $author_email, $bulk);
 } catch (Exception $e) {
-    echo 'Exception when calling BulkkeysuploadApi->bulkKeysUploadBulkKeysUpload: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling BulkKeysUploadApi->bulkKeysUpload: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

@@ -88,7 +88,7 @@ class AppsApi
     }
 
     /**
-     * Operation appsCreateApp
+     * Operation createApp
      *
      * @param string $author_name  (required)
      * @param string $author_email  (required)
@@ -96,14 +96,14 @@ class AppsApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\AppCreationResponseModel
      */
-    public function appsCreateApp($author_name, $author_email, $new_app_model)
+    public function createApp($author_name, $author_email, $new_app_model)
     {
-        list($response) = $this->appsCreateAppWithHttpInfo($author_name, $author_email, $new_app_model);
+        list($response) = $this->createAppWithHttpInfo($author_name, $author_email, $new_app_model);
         return $response;
     }
 
     /**
-     * Operation appsCreateAppWithHttpInfo
+     * Operation createAppWithHttpInfo
      *
      * @param string $author_name  (required)
      * @param string $author_email  (required)
@@ -111,19 +111,19 @@ class AppsApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\AppCreationResponseModel, HTTP status code, HTTP response headers (array of strings)
      */
-    public function appsCreateAppWithHttpInfo($author_name, $author_email, $new_app_model)
+    public function createAppWithHttpInfo($author_name, $author_email, $new_app_model)
     {
         // verify the required parameter 'author_name' is set
         if ($author_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling appsCreateApp');
+            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling createApp');
         }
         // verify the required parameter 'author_email' is set
         if ($author_email === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling appsCreateApp');
+            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling createApp');
         }
         // verify the required parameter 'new_app_model' is set
         if ($new_app_model === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $new_app_model when calling appsCreateApp');
+            throw new \InvalidArgumentException('Missing the required parameter $new_app_model when calling createApp');
         }
         // parse inputs
         $resourcePath = "/apps";

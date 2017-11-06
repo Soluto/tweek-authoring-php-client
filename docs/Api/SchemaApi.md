@@ -4,14 +4,14 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**schemaAddIdentity**](SchemaApi.md#schemaAddIdentity) | **POST** /schemas/{identityType} | 
-[**schemaDeleteIdentity**](SchemaApi.md#schemaDeleteIdentity) | **DELETE** /schemas/{identityType} | 
-[**schemaGetSchemas**](SchemaApi.md#schemaGetSchemas) | **GET** /schemas | 
-[**schemaPatchIdentity**](SchemaApi.md#schemaPatchIdentity) | **PATCH** /schemas/{identityType} | 
+[**addIdentity**](SchemaApi.md#addIdentity) | **POST** /schemas/{identityType} | 
+[**deleteIdentity**](SchemaApi.md#deleteIdentity) | **DELETE** /schemas/{identityType} | 
+[**listSchemas**](SchemaApi.md#listSchemas) | **GET** /schemas | 
+[**patchIdentity**](SchemaApi.md#patchIdentity) | **PATCH** /schemas/{identityType} | 
 
 
-# **schemaAddIdentity**
-> string schemaAddIdentity($identity_type, $author_name, $author_email, $value)
+# **addIdentity**
+> string addIdentity($identity_type, $author_name, $author_email, $value)
 
 
 
@@ -29,10 +29,10 @@ $author_email = "author_email_example"; // string |
 $value = new \Swagger\Client\Model\JsonValue(); // \Swagger\Client\Model\JsonValue | 
 
 try {
-    $result = $api_instance->schemaAddIdentity($identity_type, $author_name, $author_email, $value);
+    $result = $api_instance->addIdentity($identity_type, $author_name, $author_email, $value);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SchemaApi->schemaAddIdentity: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling SchemaApi->addIdentity: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -61,8 +61,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **schemaDeleteIdentity**
-> string schemaDeleteIdentity($identity_type, $author_name, $author_email)
+# **deleteIdentity**
+> string deleteIdentity($identity_type, $author_name, $author_email)
 
 
 
@@ -79,10 +79,10 @@ $author_name = "author_name_example"; // string |
 $author_email = "author_email_example"; // string | 
 
 try {
-    $result = $api_instance->schemaDeleteIdentity($identity_type, $author_name, $author_email);
+    $result = $api_instance->deleteIdentity($identity_type, $author_name, $author_email);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SchemaApi->schemaDeleteIdentity: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling SchemaApi->deleteIdentity: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -110,8 +110,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **schemaGetSchemas**
-> object[] schemaGetSchemas()
+# **listSchemas**
+> object[] listSchemas()
 
 
 
@@ -125,10 +125,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new Swagger\Client\Api\SchemaApi();
 
 try {
-    $result = $api_instance->schemaGetSchemas();
+    $result = $api_instance->listSchemas();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SchemaApi->schemaGetSchemas: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling SchemaApi->listSchemas: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -151,8 +151,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **schemaPatchIdentity**
-> string schemaPatchIdentity($identity_type, $author_name, $author_email, $patch)
+# **patchIdentity**
+> string patchIdentity($identity_type, $author_name, $author_email, $patch)
 
 
 
@@ -170,10 +170,10 @@ $author_email = "author_email_example"; // string |
 $patch = new \Swagger\Client\Model\JsonValue(); // \Swagger\Client\Model\JsonValue | 
 
 try {
-    $result = $api_instance->schemaPatchIdentity($identity_type, $author_name, $author_email, $patch);
+    $result = $api_instance->patchIdentity($identity_type, $author_name, $author_email, $patch);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling SchemaApi->schemaPatchIdentity: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling SchemaApi->patchIdentity: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```

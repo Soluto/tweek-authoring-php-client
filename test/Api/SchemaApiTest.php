@@ -73,42 +73,42 @@ class SchemaApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for schemaAddIdentity
+     * Test case for addIdentity
      *
      * .
      *
      */
-    public function testSchemaAddIdentity()
+    public function testAddIdentity()
     {
     }
 
     /**
-     * Test case for schemaDeleteIdentity
+     * Test case for deleteIdentity
      *
      * .
      *
      */
-    public function testSchemaDeleteIdentity()
+    public function testDeleteIdentity()
     {
     }
 
     /**
-     * Test case for schemaGetSchemas
+     * Test case for listSchemas
      *
      * .
      *
      */
-    public function testSchemaGetSchemas()
+    public function testListSchemas()
     {
     }
 
     /**
-     * Test case for schemaPatchIdentity
+     * Test case for patchIdentity
      *
      * .
      *
      */
-    public function testSchemaPatchIdentity()
+    public function testPatchIdentity()
     {
     }
 }

@@ -88,24 +88,24 @@ class TagsApi
     }
 
     /**
-     * Operation tagsGetTags
+     * Operation listTags
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string[]
      */
-    public function tagsGetTags()
+    public function listTags()
     {
-        list($response) = $this->tagsGetTagsWithHttpInfo();
+        list($response) = $this->listTagsWithHttpInfo();
         return $response;
     }
 
     /**
-     * Operation tagsGetTagsWithHttpInfo
+     * Operation listTagsWithHttpInfo
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function tagsGetTagsWithHttpInfo()
+    public function listTagsWithHttpInfo()
     {
         // parse inputs
         $resourcePath = "/tags";
@@ -152,7 +152,7 @@ class TagsApi
     }
 
     /**
-     * Operation tagsSaveTags
+     * Operation saveTags
      *
      * @param string $author_name  (required)
      * @param string $author_email  (required)
@@ -160,14 +160,14 @@ class TagsApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return void
      */
-    public function tagsSaveTags($author_name, $author_email, $tags_to_save)
+    public function saveTags($author_name, $author_email, $tags_to_save)
     {
-        list($response) = $this->tagsSaveTagsWithHttpInfo($author_name, $author_email, $tags_to_save);
+        list($response) = $this->saveTagsWithHttpInfo($author_name, $author_email, $tags_to_save);
         return $response;
     }
 
     /**
-     * Operation tagsSaveTagsWithHttpInfo
+     * Operation saveTagsWithHttpInfo
      *
      * @param string $author_name  (required)
      * @param string $author_email  (required)
@@ -175,19 +175,19 @@ class TagsApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
-    public function tagsSaveTagsWithHttpInfo($author_name, $author_email, $tags_to_save)
+    public function saveTagsWithHttpInfo($author_name, $author_email, $tags_to_save)
     {
         // verify the required parameter 'author_name' is set
         if ($author_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling tagsSaveTags');
+            throw new \InvalidArgumentException('Missing the required parameter $author_name when calling saveTags');
         }
         // verify the required parameter 'author_email' is set
         if ($author_email === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling tagsSaveTags');
+            throw new \InvalidArgumentException('Missing the required parameter $author_email when calling saveTags');
         }
         // verify the required parameter 'tags_to_save' is set
         if ($tags_to_save === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $tags_to_save when calling tagsSaveTags');
+            throw new \InvalidArgumentException('Missing the required parameter $tags_to_save when calling saveTags');
         }
         // parse inputs
         $resourcePath = "/tags";

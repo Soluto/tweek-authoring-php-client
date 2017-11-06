@@ -73,32 +73,32 @@ class SearchApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for searchGetSearchIndex
+     * Test case for getSearchIndex
      *
      * .
      *
      */
-    public function testSearchGetSearchIndex()
+    public function testGetSearchIndex()
     {
     }
 
     /**
-     * Test case for searchSearch
+     * Test case for search
      *
      * .
      *
      */
-    public function testSearchSearch()
+    public function testSearch()
     {
     }
 
     /**
-     * Test case for searchSuggestions
+     * Test case for getSuggestions
      *
      * .
      *
      */
-    public function testSearchSuggestions()
+    public function testGetSuggestions()
     {
     }
 }

@@ -73,22 +73,22 @@ class TagsApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for tagsGetTags
+     * Test case for listTags
      *
      * .
      *
      */
-    public function testTagsGetTags()
+    public function testListTags()
     {
     }
 
     /**
-     * Test case for tagsSaveTags
+     * Test case for saveTags
      *
      * .
      *
      */
-    public function testTagsSaveTags()
+    public function testSaveTags()
     {
     }
 }

@@ -73,12 +73,12 @@ class AppsApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for appsCreateApp
+     * Test case for createApp
      *
      * .
      *
      */
-    public function testAppsCreateApp()
+    public function testCreateApp()
     {
     }
 }

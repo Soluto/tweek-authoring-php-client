@@ -62,10 +62,10 @@ $author_email = "author_email_example"; // string |
 $new_app_model = new \Swagger\Client\Model\AppCreationRequestModel(); // \Swagger\Client\Model\AppCreationRequestModel | 
 
 try {
-    $result = $api_instance->appsCreateApp($author_name, $author_email, $new_app_model);
+    $result = $api_instance->createApp($author_name, $author_email, $new_app_model);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AppsApi->appsCreateApp: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling AppsApi->createApp: ', $e->getMessage(), PHP_EOL;
 }
 
 ?>
@@ -77,26 +77,26 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AppsApi* | [**appsCreateApp**](docs/Api/AppsApi.md#appscreateapp) | **POST** /apps | 
-*BulkkeysuploadApi* | [**bulkKeysUploadBulkKeysUpload**](docs/Api/BulkkeysuploadApi.md#bulkkeysuploadbulkkeysupload) | **PUT** /bulk-keys-upload | 
-*KeysApi* | [**keysDeleteKey**](docs/Api/KeysApi.md#keysdeletekey) | **DELETE** /key | 
-*KeysApi* | [**keysGetAllKeys**](docs/Api/KeysApi.md#keysgetallkeys) | **GET** /keys | 
-*KeysApi* | [**keysGetAllManifests**](docs/Api/KeysApi.md#keysgetallmanifests) | **GET** /manifests | 
-*KeysApi* | [**keysGetDependents**](docs/Api/KeysApi.md#keysgetdependents) | **GET** /dependent | 
-*KeysApi* | [**keysGetKey**](docs/Api/KeysApi.md#keysgetkey) | **GET** /key | 
-*KeysApi* | [**keysGetKeyRevisionHistory**](docs/Api/KeysApi.md#keysgetkeyrevisionhistory) | **GET** /revision-history | 
-*KeysApi* | [**keysGetManifest**](docs/Api/KeysApi.md#keysgetmanifest) | **GET** /manifest | 
-*KeysApi* | [**keysGetRevision**](docs/Api/KeysApi.md#keysgetrevision) | **GET** /revision | 
-*KeysApi* | [**keysUpdateKey**](docs/Api/KeysApi.md#keysupdatekey) | **PUT** /key | 
-*SchemaApi* | [**schemaAddIdentity**](docs/Api/SchemaApi.md#schemaaddidentity) | **POST** /schemas/{identityType} | 
-*SchemaApi* | [**schemaDeleteIdentity**](docs/Api/SchemaApi.md#schemadeleteidentity) | **DELETE** /schemas/{identityType} | 
-*SchemaApi* | [**schemaGetSchemas**](docs/Api/SchemaApi.md#schemagetschemas) | **GET** /schemas | 
-*SchemaApi* | [**schemaPatchIdentity**](docs/Api/SchemaApi.md#schemapatchidentity) | **PATCH** /schemas/{identityType} | 
-*SearchApi* | [**searchGetSearchIndex**](docs/Api/SearchApi.md#searchgetsearchindex) | **GET** /search-index | 
-*SearchApi* | [**searchSearch**](docs/Api/SearchApi.md#searchsearch) | **GET** /search | 
-*SearchApi* | [**searchSuggestions**](docs/Api/SearchApi.md#searchsuggestions) | **GET** /suggestions | 
-*TagsApi* | [**tagsGetTags**](docs/Api/TagsApi.md#tagsgettags) | **GET** /tags | 
-*TagsApi* | [**tagsSaveTags**](docs/Api/TagsApi.md#tagssavetags) | **PUT** /tags | 
+*AppsApi* | [**createApp**](docs/Api/AppsApi.md#createApp) | **POST** /apps | 
+*BulkKeysUploadApi* | [**bulkKeysUpload**](docs/Api/BulkKeysUploadApi.md#bulkKeysUpload) | **PUT** /bulk-keys-upload | 
+*KeysApi* | [**deleteKey**](docs/Api/KeysApi.md#deleteKey) | **DELETE** /key | 
+*KeysApi* | [**listKeys**](docs/Api/KeysApi.md#listKeys) | **GET** /keys | 
+*KeysApi* | [**listManifests**](docs/Api/KeysApi.md#listManifests) | **GET** /manifests | 
+*KeysApi* | [**getDependents**](docs/Api/KeysApi.md#getDependents) | **GET** /dependent | 
+*KeysApi* | [**getKey**](docs/Api/KeysApi.md#getKey) | **GET** /key | 
+*KeysApi* | [**getKeyRevisionHistory**](docs/Api/KeysApi.md#getKeyrevisionhistory) | **GET** /revision-history | 
+*KeysApi* | [**getManifest**](docs/Api/KeysApi.md#getManifest) | **GET** /manifest | 
+*KeysApi* | [**getRevision**](docs/Api/KeysApi.md#getRevision) | **GET** /revision | 
+*KeysApi* | [**updateKey**](docs/Api/KeysApi.md#updateKey) | **PUT** /key | 
+*SchemaApi* | [**addIdentity**](docs/Api/SchemaApi.md#addIdentity) | **POST** /schemas/{identityType} | 
+*SchemaApi* | [**deleteIdentity**](docs/Api/SchemaApi.md#deleteIdentity) | **DELETE** /schemas/{identityType} | 
+*SchemaApi* | [**listSchemas**](docs/Api/SchemaApi.md#listSchemas) | **GET** /schemas | 
+*SchemaApi* | [**patchIdentity**](docs/Api/SchemaApi.md#patchIdentity) | **PATCH** /schemas/{identityType} | 
+*SearchApi* | [**getSearchIndex**](docs/Api/SearchApi.md#getSearchIndex) | **GET** /search-index | 
+*SearchApi* | [**search**](docs/Api/SearchApi.md#search) | **GET** /search | 
+*SearchApi* | [**getSuggestions**](docs/Api/SearchApi.md#getSuggestions) | **GET** /suggestions | 
+*TagsApi* | [**listTags**](docs/Api/TagsApi.md#listTags) | **GET** /tags | 
+*TagsApi* | [**saveTags**](docs/Api/TagsApi.md#saveTags) | **PUT** /tags | 
 
 
 ## Documentation For Models

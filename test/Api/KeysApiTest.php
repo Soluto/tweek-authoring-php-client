@@ -73,92 +73,92 @@ class KeysApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test case for keysDeleteKey
+     * Test case for deleteKey
      *
      * .
      *
      */
-    public function testKeysDeleteKey()
+    public function testDeleteKey()
     {
     }
 
     /**
-     * Test case for keysGetAllKeys
+     * Test case for listKeys
      *
      * .
      *
      */
-    public function testKeysGetAllKeys()
+    public function testListKeys()
     {
     }
 
     /**
-     * Test case for keysGetAllManifests
+     * Test case for listManifests
      *
      * .
      *
      */
-    public function testKeysGetAllManifests()
+    public function testListManifests()
     {
     }
 
     /**
-     * Test case for keysGetDependents
+     * Test case for getDependents
      *
      * .
      *
      */
-    public function testKeysGetDependents()
+    public function testGetDependents()
     {
     }
 
     /**
-     * Test case for keysGetKey
+     * Test case for getKey
      *
      * .
      *
      */
-    public function testKeysGetKey()
+    public function testGetKey()
     {
     }
 
     /**
-     * Test case for keysGetKeyRevisionHistory
+     * Test case for getKeyRevisionHistory
      *
      * .
      *
      */
-    public function testKeysGetKeyRevisionHistory()
+    public function testGetKeyRevisionHistory()
     {
     }
 
     /**
-     * Test case for keysGetManifest
+     * Test case for getManifest
      *
      * .
      *
      */
-    public function testKeysGetManifest()
+    public function testGetManifest()
     {
     }
 
     /**
-     * Test case for keysGetRevision
+     * Test case for getRevision
      *
      * .
      *
      */
-    public function testKeysGetRevision()
+    public function testGetRevision()
     {
     }
 
     /**
-     * Test case for keysUpdateKey
+     * Test case for updateKey
      *
      * .
      *
      */
-    public function testKeysUpdateKey()
+    public function testUpdateKey()
     {
     }
 }
