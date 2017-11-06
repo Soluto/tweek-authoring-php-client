@@ -4,7 +4,7 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createApp**](AppsApi.md#createApp) | **POST** /apps | 
+[**createApp**](AppsApi.md#createapp) | **POST** /apps | 
 
 
 # **createApp**

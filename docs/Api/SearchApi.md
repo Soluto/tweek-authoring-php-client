@@ -4,9 +4,9 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getSearchIndex**](SearchApi.md#getSearchIndex) | **GET** /search-index | 
+[**getSearchIndex**](SearchApi.md#getsearchindex) | **GET** /search-index | 
 [**search**](SearchApi.md#search) | **GET** /search | 
-[**getSuggestions**](SearchApi.md#getSuggestions) | **GET** /suggestions | 
+[**getSuggestions**](SearchApi.md#getsuggestions) | **GET** /suggestions | 
 
 
 # **getSearchIndex**

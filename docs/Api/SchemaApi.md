@@ -4,10 +4,10 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addIdentity**](SchemaApi.md#addIdentity) | **POST** /schemas/{identityType} | 
-[**deleteIdentity**](SchemaApi.md#deleteIdentity) | **DELETE** /schemas/{identityType} | 
-[**listSchemas**](SchemaApi.md#listSchemas) | **GET** /schemas | 
-[**patchIdentity**](SchemaApi.md#patchIdentity) | **PATCH** /schemas/{identityType} | 
+[**addIdentity**](SchemaApi.md#addidentity) | **POST** /schemas/{identityType} | 
+[**deleteIdentity**](SchemaApi.md#deleteidentity) | **DELETE** /schemas/{identityType} | 
+[**listSchemas**](SchemaApi.md#listschemas) | **GET** /schemas | 
+[**patchIdentity**](SchemaApi.md#patchidentity) | **PATCH** /schemas/{identityType} | 
 
 
 # **addIdentity**

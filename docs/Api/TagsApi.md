@@ -4,8 +4,8 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listTags**](TagsApi.md#listTags) | **GET** /tags | 
-[**saveTags**](TagsApi.md#saveTags) | **PUT** /tags | 
+[**listTags**](TagsApi.md#listtags) | **GET** /tags | 
+[**saveTags**](TagsApi.md#savetags) | **PUT** /tags | 
 
 
 # **listTags**

@@ -4,7 +4,7 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**bulkKeysUpload**](BulkKeysUploadApi.md#bulkKeysUpload) | **PUT** /bulk-keys-upload | 
+[**bulkKeysUpload**](BulkKeysUploadApi.md#bulkkeysupload) | **PUT** /bulk-keys-upload | 
 
 
 # **bulkKeysUpload**

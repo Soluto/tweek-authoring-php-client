@@ -4,14 +4,14 @@ All URIs are relative to *https://tweek-authoring/api/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteKey**](KeysApi.md#deleteKey) | **DELETE** /key | 
-[**listKeys**](KeysApi.md#listKeys) | **GET** /keys | 
-[**listManifests**](KeysApi.md#listManifests) | **GET** /manifests | 
-[**getDependents**](KeysApi.md#getDependents) | **GET** /dependent | 
-[**getKey**](KeysApi.md#getKey) | **GET** /key | 
-[**getKeyRevisionHistory**](KeysApi.md#getKeyRevisionHistory) | **GET** /revision-history | 
-[**getManifest**](KeysApi.md#getManifest) | **GET** /manifest | 
-[**getRevision**](KeysApi.md#getRevision) | **GET** /revision | 
+[**deleteKey**](KeysApi.md#deletekey) | **DELETE** /key | 
+[**listKeys**](KeysApi.md#listkeys) | **GET** /keys | 
+[**listManifests**](KeysApi.md#listmanifests) | **GET** /manifests | 
+[**getDependents**](KeysApi.md#getdependents) | **GET** /dependent | 
+[**getKey**](KeysApi.md#getkey) | **GET** /key | 
+[**getKeyRevisionHistory**](KeysApi.md#getkeyrevisionhistory) | **GET** /revision-history | 
+[**getManifest**](KeysApi.md#getmanifest) | **GET** /manifest | 
+[**getRevision**](KeysApi.md#getrevision) | **GET** /revision | 
 [**updateKey**](KeysApi.md#updateKey) | **PUT** /key | 
 
 
