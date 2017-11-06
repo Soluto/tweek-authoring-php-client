@@ -1,20 +1,13 @@
 {
-    "name": "/",
-    "description": "",
+    "name": "soluto/tweek-authoring-php-client",
+    "description": "NOT OFFICIAL - PHP client for Tweek Authoring, auto-generated from swagger",
     "keywords": [
         "swagger",
         "php",
-        "sdk",
-        "api"
+        "tweek",
+        "authoring"
     ],
-    "homepage": "http://swagger.io",
-    "license": "proprietary",
-    "authors": [
-        {
-            "name": "Swagger and contributors",
-            "homepage": "https://github.com/swagger-api/swagger-codegen"
-        }
-    ],
+    "license": "MIT",
     "require": {
         "php": ">=5.4",
         "ext-curl": "*",
