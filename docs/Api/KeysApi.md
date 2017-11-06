@@ -374,7 +374,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **keysUpdateKey**
-> string keysUpdateKey($key_path, $author_name, $author_email, $value)
+> string keysUpdateKey($key_path, $author_name, $author_email, $new_key_model)
 
 
 
@@ -389,10 +389,10 @@ $api_instance = new Swagger\Client\Api\KeysApi();
 $key_path = "key_path_example"; // string | 
 $author_name = "author_name_example"; // string | 
 $author_email = "author_email_example"; // string | 
-$value = new \Swagger\Client\Model\KeyUpdateModel(); // \Swagger\Client\Model\KeyUpdateModel | 
+$new_key_model = new \Swagger\Client\Model\KeyUpdateModel(); // \Swagger\Client\Model\KeyUpdateModel | 
 
 try {
-    $result = $api_instance->keysUpdateKey($key_path, $author_name, $author_email, $value);
+    $result = $api_instance->keysUpdateKey($key_path, $author_name, $author_email, $new_key_model);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling KeysApi->keysUpdateKey: ', $e->getMessage(), PHP_EOL;
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
  **key_path** | **string**|  |
  **author_name** | **string**|  |
  **author_email** | **string**|  |
- **value** | [**\Swagger\Client\Model\KeyUpdateModel**](../Model/KeyUpdateModel.md)|  |
+ **new_key_model** | [**\Swagger\Client\Model\KeyUpdateModel**](../Model/KeyUpdateModel.md)|  |
 
 ### Return type
 

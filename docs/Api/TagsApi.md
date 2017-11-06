@@ -64,7 +64,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new Swagger\Client\Api\TagsApi();
 $author_name = "author_name_example"; // string | 
 $author_email = "author_email_example"; // string | 
-$tags_to_save = new \Swagger\Client\Model\TagsModel(); // \Swagger\Client\Model\TagsModel | 
+$tags_to_save = new \Swagger\Client\Model\JsonValue(); // \Swagger\Client\Model\JsonValue | 
 
 try {
     $api_instance->tagsSaveTags($author_name, $author_email, $tags_to_save);
@@ -80,7 +80,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **author_name** | **string**|  |
  **author_email** | **string**|  |
- **tags_to_save** | [**\Swagger\Client\Model\TagsModel**](../Model/TagsModel.md)|  |
+ **tags_to_save** | [**\Swagger\Client\Model\JsonValue**](../Model/JsonValue.md)|  |
 
 ### Return type
 

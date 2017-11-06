@@ -1,6 +1,6 @@
 <?php
 /**
- * TagsModel
+ * JsonValue
  *
  * PHP version 5
  *
@@ -32,14 +32,15 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * TagsModel Class Doc Comment
+ * JsonValue Class Doc Comment
  *
  * @category    Class
+ * @description 
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class TagsModel implements ArrayAccess
+class JsonValue implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -47,7 +48,7 @@ class TagsModel implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'TagsModel';
+    protected static $swaggerModelName = 'JsonValue';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -141,7 +142,7 @@ class TagsModel implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = parent::listInvalidProperties();
+        $invalid_properties = [];
 
         return $invalid_properties;
     }
@@ -154,9 +155,6 @@ class TagsModel implements ArrayAccess
      */
     public function valid()
     {
-        if (!parent::valid()) {
-            return false;
-        }
 
         return true;
     }

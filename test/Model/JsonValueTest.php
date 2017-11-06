@@ -1,6 +1,6 @@
 <?php
 /**
- * TagsModelTest
+ * JsonValueTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Swagger\Client;
 
 /**
- * TagsModelTest Class Doc Comment
+ * JsonValueTest Class Doc Comment
  *
  * @category    Class */
-// * @description TagsModel
+// * @description 
 /**
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class TagsModelTest extends \PHPUnit_Framework_TestCase
+class JsonValueTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -71,9 +71,9 @@ class TagsModelTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "TagsModel"
+     * Test "JsonValue"
      */
-    public function testTagsModel()
+    public function testJsonValue()
     {
     }
 }

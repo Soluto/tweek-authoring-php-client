@@ -26,7 +26,7 @@ $api_instance = new Swagger\Client\Api\SchemaApi();
 $identity_type = "identity_type_example"; // string | 
 $author_name = "author_name_example"; // string | 
 $author_email = "author_email_example"; // string | 
-$value = NULL; // object | 
+$value = new \Swagger\Client\Model\JsonValue(); // \Swagger\Client\Model\JsonValue | 
 
 try {
     $result = $api_instance->schemaAddIdentity($identity_type, $author_name, $author_email, $value);
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
  **identity_type** | **string**|  |
  **author_name** | **string**|  |
  **author_email** | **string**|  |
- **value** | **object**|  |
+ **value** | [**\Swagger\Client\Model\JsonValue**](../Model/JsonValue.md)|  |
 
 ### Return type
 
@@ -167,7 +167,7 @@ $api_instance = new Swagger\Client\Api\SchemaApi();
 $identity_type = "identity_type_example"; // string | 
 $author_name = "author_name_example"; // string | 
 $author_email = "author_email_example"; // string | 
-$patch = NULL; // object | 
+$patch = new \Swagger\Client\Model\JsonValue(); // \Swagger\Client\Model\JsonValue | 
 
 try {
     $result = $api_instance->schemaPatchIdentity($identity_type, $author_name, $author_email, $patch);
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
  **identity_type** | **string**|  |
  **author_name** | **string**|  |
  **author_email** | **string**|  |
- **patch** | **object**|  |
+ **patch** | [**\Swagger\Client\Model\JsonValue**](../Model/JsonValue.md)|  |
 
 ### Return type
 

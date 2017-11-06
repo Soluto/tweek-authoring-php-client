@@ -93,7 +93,7 @@ class SchemaApi
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
      * @param string $author_email  (required)
-     * @param object $value  (required)
+     * @param \Swagger\Client\Model\JsonValue $value  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
@@ -109,7 +109,7 @@ class SchemaApi
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
      * @param string $author_email  (required)
-     * @param object $value  (required)
+     * @param \Swagger\Client\Model\JsonValue $value  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -364,7 +364,7 @@ class SchemaApi
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
      * @param string $author_email  (required)
-     * @param object $patch  (required)
+     * @param \Swagger\Client\Model\JsonValue $patch  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
@@ -380,7 +380,7 @@ class SchemaApi
      * @param string $identity_type  (required)
      * @param string $author_name  (required)
      * @param string $author_email  (required)
-     * @param object $patch  (required)
+     * @param \Swagger\Client\Model\JsonValue $patch  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

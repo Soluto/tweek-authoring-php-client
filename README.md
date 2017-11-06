@@ -103,8 +103,8 @@ Class | Method | HTTP request | Description
 
  - [AppCreationRequestModel](docs/Model/AppCreationRequestModel.md)
  - [AppCreationResponseModel](docs/Model/AppCreationResponseModel.md)
+ - [JsonValue](docs/Model/JsonValue.md)
  - [KeyUpdateModel](docs/Model/KeyUpdateModel.md)
- - [TagsModel](docs/Model/TagsModel.md)
 
 
 ## Documentation For Authorization

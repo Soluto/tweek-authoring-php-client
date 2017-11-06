@@ -156,7 +156,7 @@ class TagsApi
      *
      * @param string $author_name  (required)
      * @param string $author_email  (required)
-     * @param \Swagger\Client\Model\TagsModel $tags_to_save  (required)
+     * @param \Swagger\Client\Model\JsonValue $tags_to_save  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return void
      */
@@ -171,7 +171,7 @@ class TagsApi
      *
      * @param string $author_name  (required)
      * @param string $author_email  (required)
-     * @param \Swagger\Client\Model\TagsModel $tags_to_save  (required)
+     * @param \Swagger\Client\Model\JsonValue $tags_to_save  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

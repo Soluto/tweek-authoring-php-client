@@ -697,13 +697,13 @@ class KeysApi
      * @param string $key_path  (required)
      * @param string $author_name  (required)
      * @param string $author_email  (required)
-     * @param \Swagger\Client\Model\KeyUpdateModel $value  (required)
+     * @param \Swagger\Client\Model\KeyUpdateModel $new_key_model  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return string
      */
-    public function keysUpdateKey($key_path, $author_name, $author_email, $value)
+    public function keysUpdateKey($key_path, $author_name, $author_email, $new_key_model)
     {
-        list($response) = $this->keysUpdateKeyWithHttpInfo($key_path, $author_name, $author_email, $value);
+        list($response) = $this->keysUpdateKeyWithHttpInfo($key_path, $author_name, $author_email, $new_key_model);
         return $response;
     }
 
@@ -713,11 +713,11 @@ class KeysApi
      * @param string $key_path  (required)
      * @param string $author_name  (required)
      * @param string $author_email  (required)
-     * @param \Swagger\Client\Model\KeyUpdateModel $value  (required)
+     * @param \Swagger\Client\Model\KeyUpdateModel $new_key_model  (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function keysUpdateKeyWithHttpInfo($key_path, $author_name, $author_email, $value)
+    public function keysUpdateKeyWithHttpInfo($key_path, $author_name, $author_email, $new_key_model)
     {
         // verify the required parameter 'key_path' is set
         if ($key_path === null) {
@@ -731,9 +731,9 @@ class KeysApi
         if ($author_email === null) {
             throw new \InvalidArgumentException('Missing the required parameter $author_email when calling keysUpdateKey');
         }
-        // verify the required parameter 'value' is set
-        if ($value === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $value when calling keysUpdateKey');
+        // verify the required parameter 'new_key_model' is set
+        if ($new_key_model === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $new_key_model when calling keysUpdateKey');
         }
         // parse inputs
         $resourcePath = "/key";
@@ -761,8 +761,8 @@ class KeysApi
         }
         // body params
         $_tempBody = null;
-        if (isset($value)) {
-            $_tempBody = $value;
+        if (isset($new_key_model)) {
+            $_tempBody = $new_key_model;
         }
 
         // for model (json/xml)
