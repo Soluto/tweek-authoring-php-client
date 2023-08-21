@@ -1,3 +1,6 @@
+## DEPRECATED
+This repository is no longer maintained and has been archived. Feel free to browse the code, but please migrate to other solutions.
+
 # tweek-authoring-php-client
 API used to query and manipulate Tweek data in git
 
